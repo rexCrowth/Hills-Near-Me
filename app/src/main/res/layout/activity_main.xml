@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/app_bar_main"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/map_fragment"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_horizontal|fill_vertical|center_horizontal"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/crosshairs"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:layout_marginEnd="15.5dp"
+        android:layout_marginTop="475dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/toggleStateDraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="410dp" />
+
+    <RelativeLayout
+        android:id="@+id/fram_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/toggleStateMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/resetAddButton"
+            android:layout_alignStart="@+id/resetAddButton"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:layout_marginEnd="15.5dp"
+            android:layout_marginTop="410dp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/resetAddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:layout_marginEnd="15.5dp"
+            android:layout_marginTop="15.5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/searchHillResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

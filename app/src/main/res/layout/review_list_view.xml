@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/listview_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/filterOptionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dialog_body_horizontal_margin"
+            android:layout_alignParentTop="true"
+            android:text="Filter By:"/>
+
+        <Spinner
+            android:id="@+id/filterOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/filterOptionTitle"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:id="@+id/filterReviewDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/filterOptions"
+            android:layout_marginEnd="@dimen/dialog_footer_vertical_margin"
+            android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+            android:maxLength="20"
+            android:hint="Review Title"
+            android:enabled="false"
+            android:visibility="invisible"/>
+        <RatingBar
+            android:id="@+id/filterRevRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:secondaryProgressTint="@color/colorPrimaryDark"
+            android:hapticFeedbackEnabled="false"
+            android:visibility="invisible" />
+
+        <RatingBar
+            android:id="@+id/filterTrafficRating"
+            style="@style/CustomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:hapticFeedbackEnabled="false"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/filterOptions"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:layout_marginEnd="@dimen/dialog_footer_vertical_margin"/>
+
+        <Button
+            android:id="@+id/filterRatingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:text="Search"
+            android:layout_below="@+id/filterOptions"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/reviewList"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/listview_header"/>
+
+</RelativeLayout>

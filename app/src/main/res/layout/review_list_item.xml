@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_review_frag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RatingBar
+        android:id="@+id/hillRevRating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dialog_body_horizontal_margin"
+        android:layout_marginTop="@dimen/dialog_body_horizontal_margin"
+        android:layout_marginBottom="@dimen/dialog_body_horizontal_margin"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="3"
+        android:scaleX="1.25"
+        android:scaleY="1.25"
+        android:stepSize="0.5"
+        android:progressTint="@color/colorPrimaryDark"
+        android:secondaryProgressTint="@color/colorPrimaryDark">
+    </RatingBar>
+    <TextView
+        android:id="@+id/hillTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/dialog_header_horizontal_margin"
+        android:layout_marginEnd="@dimen/dialog_body_horizontal_margin"
+        android:layout_marginTop="@dimen/dialog_body_horizontal_margin"
+        android:layout_marginBottom="@dimen/dialog_body_horizontal_margin"
+        android:text="Good hill dawg">
+    </TextView>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "893867133049",
+    "firebase_url": "https://hills-near-me.firebaseio.com",
+    "project_id": "hills-near-me",
+    "storage_bucket": "hills-near-me.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893867133049:android:478f8b9dd7aaf7a0",
+        "android_client_info": {
+          "package_name": "com.example.rex.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893867133049-god1es0non10oqknhu0hubcqd45pv0ph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvUlL1r917iBTcByYboSOpJJ8ei4dXDxg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

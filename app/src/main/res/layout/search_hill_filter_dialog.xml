@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/searchHillRatingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/searchSlopeTitle"
+        android:layout_alignBottom="@+id/searchHillRating"
+        android:text="Rating:"
+        android:clickable="true"
+        android:textColor="@color/clickableTextView"
+        android:textStyle="italic"/>
+
+    <RatingBar
+        android:id="@+id/searchHillRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dialog_header_vertical_margin"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:progressTint="@color/colorPrimaryDark"
+        android:secondaryProgressTint="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/searchSlopeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchHillRating"
+        android:layout_marginStart="@dimen/dialog_body_horizontal_margin"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+        android:text="Slope:"
+        android:clickable="true"
+        android:textColor="@color/clickableTextView"
+        android:textStyle="italic"/>
+
+    <Spinner
+        android:id="@+id/searchSlopeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/searchSlopeTitle"
+        android:layout_alignTop="@+id/searchSlopeTitle"
+        android:layout_marginStart="@dimen/dialog_body_horizontal_margin"
+        android:text="slope value"/>
+
+
+    <TextView
+        android:id="@+id/searchLengthTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchSlopeTitle"
+        android:layout_alignStart="@id/searchSlopeTitle"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+        android:text="Length:"
+        android:clickable="true"
+        android:textColor="@color/clickableTextView"
+        android:textStyle="italic"/>
+
+    <SeekBar
+        android:id="@+id/searchLengthValue"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/searchSlopeValue"
+        android:layout_alignTop="@+id/searchLengthTitle"
+        android:max="9"/>
+
+    <TextView
+        android:id="@+id/searchLengthDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchLengthValue"
+        android:layout_toStartOf="@+id/searchLengthValue"
+        android:layout_marginTop="@dimen/nav_header_vertical_spacing"/>
+
+    <TextView
+        android:id="@+id/searchTerrainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchLengthDisplay"
+        android:layout_alignStart="@id/searchSlopeTitle"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="Terrain:"
+        android:clickable="true"
+        android:textColor="@color/clickableTextView"
+        android:textStyle="italic"/>
+
+    <Spinner
+        android:id="@+id/searchTerrainValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/searchTerrainTitle"
+        android:layout_alignStart="@+id/searchSlopeValue"
+        android:text="terrain value"/>
+
+    <TextView
+        android:id="@+id/searchTrafficTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchTerrainTitle"
+        android:layout_alignStart="@id/searchSlopeTitle"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+        android:text="Traffic:"
+        android:clickable="true"
+        android:textColor="@color/clickableTextView"
+        android:textStyle="italic"/>
+
+    <RatingBar
+        android:id="@+id/searchTrafficRating"
+        style="@style/CustomRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/searchSlopeValue"
+        android:layout_alignTop="@+id/searchTrafficTitle"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/searchDistanceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchTrafficTitle"
+        android:layout_alignStart="@+id/searchSlopeTitle"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+        android:layout_marginBottom="@dimen/dialog_body_vertical_margin"
+        android:text="Distance:"/>
+
+    <SeekBar
+        android:id="@+id/searchDistanceValue"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/searchTrafficRating"
+        android:layout_alignTop="@+id/searchDistanceTitle"
+        android:max="4"/>
+
+    <TextView
+        android:id="@+id/searchDistanceDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchDistanceValue"
+        android:layout_toStartOf="@+id/searchDistanceValue"
+        android:layout_marginTop="@dimen/nav_header_vertical_spacing"/>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchDistanceDisplay"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+        android:text="Search"/>
+
+</RelativeLayout>

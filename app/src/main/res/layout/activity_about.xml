@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/GoogleLicence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:clickable="true"
+        android:text="https://firebase.google.com/terms/"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp" />
+
+    <TextView
+        android:id="@+id/GoogleLicenceDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GoogleLicence"
+        android:layout_alignStart="@+id/GoogleLicence"
+        android:text="Refer to Firebase services:\n  -Firebase Realtime Database\n  -Cloud Storage for Firebase"/>
+
+    <TextView
+        android:id="@+id/ImageLicence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:clickable="true"
+        android:text="https://github.com/hdodenhof/CircleImageView"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/GoogleLicenceDetails"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Licence agreement for use of circle images"
+        android:layout_below="@+id/ImageLicence"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

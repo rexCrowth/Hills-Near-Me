@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/review_details"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/addReviewDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+        android:layout_marginBottom="@dimen/dialog_header_vertical_margin"
+        android:layout_marginStart="@dimen/dialog_header_horizontal_margin"
+        android:layout_marginEnd="@dimen/dialog_header_horizontal_margin"
+        android:hint="Review Title">
+    </EditText>
+
+    <TextView
+        android:id="@+id/addReviewRatingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addReviewDetailTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/dialog_body_horizontal_margin"
+        android:text="Overall Rating:">
+    </TextView>
+
+    <RatingBar
+        android:id="@+id/addReviewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/addReviewRatingTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="66dp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:scaleX="0.3"
+        android:scaleY="0.3"
+        android:progressTint="@color/colorPrimaryDark"
+        android:secondaryProgressTint="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/trafficRevTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addReviewRatingTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+        android:layout_marginStart="@dimen/dialog_body_horizontal_margin"
+        android:text="Traffic Rating:"/>
+
+    <RatingBar
+        android:id="@+id/addTrafficRevRating"
+        style="@style/CustomRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/trafficRevTitle"
+        android:layout_alignTop="@+id/trafficRevTitle"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:numStars="5"
+        android:stepSize="0.5"/>
+
+    <TextView
+        android:id="@+id/addDescripTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trafficRevTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+        android:layout_marginStart="@dimen/dialog_body_horizontal_margin"
+        android:text="Description:"/>
+
+    <EditText
+        android:id="@+id/addDescripText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addDescripTitle"
+        android:layout_marginBottom="@dimen/dialog_footer_vertical_margin"
+        android:layout_marginEnd="@dimen/dialog_body_horizontal_margin"
+        android:layout_marginStart="@dimen/dialog_body_horizontal_margin"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin" />
+
+    <Button
+        android:id="@+id/saveRevButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addDescripText"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+        android:text="Save"/>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Hills Near Me</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_about">About</string>
+    <string name="action_search">Search</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="listTitle">User Reviews</string>
+    <string-array name="terrain_array">
+        <item>Gravel</item>
+        <item>Pavement</item>
+        <item>Grass</item>
+        <item>Loose Stones</item>
+        <item>Dirt</item>
+        <item>Cobbled</item>
+        <item>Tiled</item>
+    </string-array>
+    <string-array name="slope_array">
+        <item>Gentle</item>
+        <item>Gradual</item>
+        <item>Steep</item>
+        <item>Sheer</item>
+        <item>Extreme</item>
+    </string-array>
+    <string-array name="review_filter_options">
+        <item>All</item>
+        <item>Title</item>
+        <item>Rating</item>
+        <item>Traffic</item>
+    </string-array>
+</resources>

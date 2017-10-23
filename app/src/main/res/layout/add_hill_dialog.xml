@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_review_frag"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RatingBar
+        android:id="@+id/addHillRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dialog_header_vertical_margin"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:progressTint="@color/colorPrimaryDark"
+        android:secondaryProgressTint="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/addSlopeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addHillRating"
+        android:layout_marginStart="@dimen/dialog_body_horizontal_margin"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+        android:text="Slope:"/>
+
+    <Spinner
+        android:id="@+id/addSlopeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/addSlopeTitle"
+        android:layout_alignTop="@+id/addSlopeTitle"
+        android:layout_marginStart="@dimen/dialog_body_horizontal_margin"
+        android:text="slope value"/>
+
+
+    <TextView
+        android:id="@+id/addLengthTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addSlopeTitle"
+        android:layout_alignStart="@id/addSlopeTitle"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+        android:text="Length:"/>
+
+    <TextView
+        android:id="@+id/addLengthValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/addLengthTitle"
+        android:layout_alignStart="@+id/addSlopeValue"
+        android:text="length value"/>
+
+    <TextView
+        android:id="@+id/addTerrainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addLengthTitle"
+        android:layout_alignStart="@id/addSlopeTitle"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+        android:text="Terrain:"/>
+
+    <Spinner
+        android:id="@+id/addTerrainValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/addTerrainTitle"
+        android:layout_alignStart="@+id/addSlopeValue"
+        android:text="terrain value"/>
+
+    <TextView
+        android:id="@+id/addTrafficTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addTerrainTitle"
+        android:layout_alignStart="@id/addSlopeTitle"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+        android:layout_marginBottom="@dimen/dialog_body_vertical_margin"
+        android:text="Traffic:"/>
+
+    <RatingBar
+        android:id="@+id/addTrafficRating"
+        style="@style/CustomRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/addSlopeValue"
+        android:layout_alignTop="@+id/addTrafficTitle"
+        android:numStars="5"
+        android:stepSize="0.5" />
+    <Button
+        android:id="@+id/addSaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addTrafficRating"
+        android:layout_marginTop="@dimen/dialog_body_vertical_margin"
+        android:text="Save"/>
+
+</RelativeLayout>
